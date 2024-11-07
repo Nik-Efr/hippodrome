@@ -37,13 +37,12 @@ class HorseTest {
         Horse horse = new Horse("TestHorse", 10.0, 5.0);
         assertEquals("TestHorse", horse.getName());
     }
-
+    //WARNING VERY STRANGE TEST!!!
     @Test
     void getHorseSpeedWhenHorseNameIsAnEvenLongerStringToTestTheLimitsOfTheNameFieldInTheHorseClassBecauseThePreviousNameWasNotLongEnoughAndIAmTooDumbToUnderstandWhatItTests() {
         Horse horse = new Horse("ThisIsAnExtremelyLongHorseNameToTestTheLimitsOfTheNameFieldInTheHorseClass", 10.0, 5.0);
         assertEquals(10.0, horse.getSpeed());
     }
-
     @Test
     void getDistance_shouldReturnCorrectDistance() {
         Horse horseWithDistance = new Horse("TestHorse", 10.0, 5.0);
