@@ -1,5 +1,5 @@
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.Collections;
 import java.util.Comparator;
@@ -9,7 +9,7 @@ import static java.util.Objects.isNull;
 
 public class Hippodrome {
 
-    private static final Logger log = LogManager.getLogger(Hippodrome.class);
+    private static final Logger log = LoggerFactory.getLogger(Hippodrome.class);
     private final List<Horse> horses;
 
     public Hippodrome(List<Horse> horses) {
